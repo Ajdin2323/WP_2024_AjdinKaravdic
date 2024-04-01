@@ -1,0 +1,126 @@
+{
+    "table": {
+      "columns": [
+        "Time",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "rows": [
+        {
+          "Time": "6.00am - 8.00am",
+          "Monday": {
+            "Activity": "WEIGHT LOOSE",
+            "Instructor": "RLefew D. Loee"
+          },
+          "Tuesday": {
+            "Activity": "Cardio",
+            "Instructor": "RLefew D. Loee"
+          },
+          "Wednesday": {
+            "Activity": "Yoga",
+            "Instructor": "Keaf Shen"
+          },
+          "Thursday": {
+            "Activity": "Fitness",
+            "Instructor": "Kimberly Stone"
+          },
+          "Friday": {},
+          "Saturday": {
+            "Activity": "Boxing",
+            "Instructor": "Rachel Adam"
+          },
+          "Sunday": {
+            "Activity": "Body Building",
+            "Instructor": "Robert Cage"
+          }
+        },
+        {
+          "Time": "10.00am - 12.00am",
+          "Monday": {},
+          "Tuesday": {
+            "Activity": "Fitness",
+            "Instructor": "Kimberly Stone"
+          },
+          "Wednesday": {
+            "Activity": "WEIGHT LOOSE",
+            "Instructor": "RLefew D. Loee"
+          },
+          "Thursday": {
+            "Activity": "Cardio",
+            "Instructor": "RLefew D. Loee"
+          },
+          "Friday": {
+            "Activity": "Body Building",
+            "Instructor": "Robert Cage"
+          },
+          "Saturday": {
+            "Activity": "Karate",
+            "Instructor": "Donald Grey"
+          },
+          "Sunday": {}
+        },
+        {
+          "Time": "5.00pm - 7.00pm",
+          "Monday": {
+            "Activity": "Boxing",
+            "Instructor": "Rachel Adam"
+          },
+          "Tuesday": {
+            "Activity": "Karate",
+            "Instructor": "Donald Grey"
+          },
+          "Wednesday": {
+            "Activity": "Body Building",
+            "Instructor": "Robert Cage"
+          },
+          "Thursday": {},
+          "Friday": {
+            "Activity": "Yoga",
+            "Instructor": "Keaf Shen"
+          },
+          "Saturday": {
+            "Activity": "Cardio",
+            "Instructor": "RLefew D. Loee"
+          },
+          "Sunday": {
+            "Activity": "Fitness",
+            "Instructor": "Kimberly Stone"
+          }
+        },
+        {
+          "Time": "7.00pm - 9.00pm",
+          "Monday": {
+            "Activity": "Cardio",
+            "Instructor": "RLefew D. Loee"
+          },
+          "Tuesday": {},
+          "Wednesday": {
+            "Activity": "Boxing",
+            "Instructor": "Rachel Adam"
+          },
+          "Thursday": {
+            "Activity": "Yoga",
+            "Instructor": "Keaf Shen"
+          },
+          "Friday": {
+            "Activity": "Karate",
+            "Instructor": "Donald Grey"
+          },
+          "Saturday": {
+            "Activity": "Boxing",
+            "Instructor": "Rachel Adam"
+          },
+          "Sunday": {
+            "Activity": "WEIGHT LOOSE",
+            "Instructor": "RLefew D. Loee"
+          }
+        }
+      ]
+    }
+  }
+  
