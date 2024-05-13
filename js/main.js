@@ -188,35 +188,35 @@ function registerUser(){
     }
 
     //console.log(newUser)
-    users.push(newUser)
-    localStorage.setItem('users', JSON.stringify(users));
+    // users.push(newUser)
+    // localStorage.setItem('users', JSON.stringify(users));
 
 }
 
-var currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
+var token = JSON.parse(localStorage.getItem('token')) || null;
 
-function login() {
-    let username = document.getElementById("username").value
-    let password = document.getElementById("password").value
+// function login() {
+//     let username = document.getElementById("username").value
+//     let password = document.getElementById("password").value
 
-    for (let i = 0; i < users.length; i++) {
-        if (username === users[i].username && password === users[i].password) {
-                currentUser = {
-                    userID: users[i].userID,
-                    username: users[i].username,
-                    name: users[i].name
-                }
-                localStorage.setItem('currentUser', JSON.stringify(currentUser));
+//     for (let i = 0; i < users.length; i++) {
+//         if (username === users[i].username && password === users[i].password) {
+//                 currentUser = {
+//                     userID: users[i].userID,
+//                     username: users[i].username,
+//                     name: users[i].name
+//                 }
+//                 localStorage.setItem('token', JSON.stringify(currentUser));
                 
-                window.location.href = "#home"
-                return;
-        }
-    }
-    if(!currentUser)
-        alert("Invalid username or password")
-}
+//                 window.location.href = "#home"
+//                 return;
+//         }
+//     }
+//     if(!currentUser)
+//         alert("Invalid username or password")
+// }
 
-if(currentUser){
+if(token){
     document.getElementById("login-button").innerHTML = "Logout"
     document.getElementById("login-button").href = "#home"
 }
@@ -226,9 +226,9 @@ else{
 }
 
 function loginHandle() {
-    if(currentUser){
-        localStorage.removeItem('currentUser');
-        currentUser = null;
+    if(token){
+        localStorage.removeItem('token');
+        token = null;
         document.getElementById("login-button").innerHTML = "Login"
         document.getElementById("login-button").href = "#login"
         window.location.href = "#login"
@@ -245,8 +245,8 @@ var userBMI;
 function calculateBMI() {
     let weightInput = document.getElementById("weight").value;
     let heightInput = document.getElementById("height").value;
-    let ageInput = document.getElementById("age").value;
-    let sexInput = document.getElementById("sex").value;
+    //let ageInput = document.getElementById("age").value;
+    //let sexInput = document.getElementById("sex").value;
 
     // Convert input values to numbers
     let weight = parseFloat(weightInput);
@@ -270,7 +270,7 @@ function calculateBMI() {
         // weight: weight,
         // height: height,
         // age: age,
-        // sex: sexInput, // Store sex as string
+        // sex: sexInput,
         bmi: bmi // Store BMI value
     };
 

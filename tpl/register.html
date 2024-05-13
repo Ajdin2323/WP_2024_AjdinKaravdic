@@ -66,6 +66,8 @@
             background-color: #45a049;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
     <div class="login-container">
@@ -83,12 +85,53 @@
                 <label for="password">Password</label>
                 <input type="password" id="password-register" name="password" placeholder="Enter your password" required>
             </div>
-            <button onclick="registerUser()">Register</button>
+            <button type="button" id="registerBtn" class="btn">Register</button>
         </form>
     </div>
-    <script src="/js/main.js">
-       
-    </script>
+    
+
+<script>
+    src="/js/main.js"
+    
+    $(document).ready(function(){
+        $("#registerBtn").click(function(e){
+            e.preventDefault(); // Prevent the default form submission
+            
+            // Get form data
+            var name = $("#name-register").val();
+            var userName = $("#username-register").val();
+            var password = $("#password-register").val();            
+            // Perform basic validation
+            // if(password !== confirmPassword) {
+            //     alert("Passwords do not match.");
+            //     return;
+            // }
+            
+            // Create form data object
+            var formData = {
+                name: name,
+                userName: userName,
+                password: password
+            };
+
+            // Send AJAX request
+            $.ajax({
+                url: "http://localhost/WP_2024_AjdinKaravdic/backend/add_user.php", 
+                type: "POST",
+                data: formData,
+                success: function(response) {
+                    
+                    console.log(response);
+                 
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
